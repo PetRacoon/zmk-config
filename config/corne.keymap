@@ -18,24 +18,24 @@
          * | TAB |  Q |  W |  E |  R |  T |      |  Y |  U |  I |  O |  P | BSPC |
          * | CTRL|  A |  S |  D |  F |  G |      |  H |  J |  K |  L |  ; |  '  |
          * | SHFT|  Z |  X |  C |  V |  B |      |  N |  M |  , |  . |  / | ENT |
-         *              | ALT | LWR | SPC |      | BSPC| RSE | ENT |
+         *              | ALT | LWR | SPC |      | BSPC| RSE-flsh |  RET  |
          */
         default_layer {
             bindings = <
                 &kp TAB    &kp Q &kp W &kp E &kp R &kp T        &kp Y &kp U &kp I     &kp O   &kp P    &kp BSPC
                 &kp LCTRL  &kp A &kp S &kp D &kp F &kp G        &kp H &kp J &kp K     &kp L   &kp SEMI &kp SQT
                 &kp LSHFT  &kp Z &kp X &kp C &kp V &kp B        &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RET
-                              &kp LALT &mo 1  &kp SPACE        &kp BSPC &lt 2 RET &kp FSLH
+                              &kp LALT &mo 1  &kp SPACE        &kp BSPC &lt 2 FSLH &kp RET 
 
             >;
         };
 
         /* ─────────────────────────────
-         * LOWER (1) — цифри, медіа, навігація, BT
+         * LOWER (1) — цифри, медіа, навігація, Bluetooth
          *
-         * | TAB | 1 | 2 | 3 | 4 | 5 |      | 6 | 7 | 8 | 9 | 0 | BSPC |
-         * | BT  | ◀ | 🔉 | 🔊 | ⏯ | ▶ |      | ← | ↓ | ↑ | → | PGU | PGD |
-         * | SHFT|   |   |   |   |   |      | HM| END|   |   |   | ESC |
+         * | TAB |  1 |  2 |  3 |  4 |  5 |      |  6 |  7 |  8 |  9 |  0 | BSPC |
+         * | BT  | MUTE| VOL-| VOL+| PLAY| NEXT |      | ← | ↓ | ↑ | → | PGU | PGD |
+         * | SHFT|    |    |    |    |    |      | HOME| END |    |    |    | ESC |
          */
         lower_layer {
             bindings = <
@@ -54,11 +54,11 @@
         };
 
         /* ─────────────────────────────
-         * RAISE (2) — символи + Vim
+         * RAISE (2) — символи
          *
-         * | TAB | ! | @ | # | % | & |      | ^ | * | ( | ) | _ | BSPC |
-         * | CTRL| - | = | [ | ] | \ |      | $ | + | { | } | | |  `  |
-         * | SHFT| ` | ~ |   |   |   |      |   |   |   |   |   | ESC |
+         * | TAB |  ! |  @ |  # |  % |  & |      |  ^ |  * |  ( |  ) |  _ | BSPC |
+         * | CTRL|  - |  = |  [ |  ] |  \ |      |  $ |  + |  { |  } |  | |  `  |
+         * | SHFT|  ` |  ~ |    |    |    |      |    |    |    |    |    | ESC |
          */
         raise_layer {
             bindings = <
